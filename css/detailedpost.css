@@ -63,12 +63,14 @@
   
   .donut-banner {
     width: 100%;
+    height: 600px;
   }
   .donut-banner img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
     object-position: bottom;
+    background-image: url(/img/yayayaya.jpg);
   }
   
   .donut-singles img {
