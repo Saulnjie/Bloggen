@@ -1,0 +1,190 @@
+.donut-title {
+    color: black;
+    font-size: 62px;
+    font-weight: 600;
+  }
+  
+  .donut-paragraph {
+    color: #898989;
+    font-size: 16px;
+    font-weight: 300;
+    width: 85%;
+  }
+  
+  .donut-sub-title {
+    color: #c4c4c4;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .donut-order-paragraph {
+    color: #595959;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+  }
+  
+  .donut-color-toggle-container {
+    display: flex;
+    justify-content: space-between;
+    width: 55px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .donut-color-toggle-black {
+    font-size: 25px;
+  }
+  
+  .donut-color-toggle-beige {
+    font-size: 25px;
+    color: #bcb0a3;
+  }
+  
+  .order-donut-price {
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .shipping-info {
+    color: #6f6f6f;
+    font-size: 12px;
+  }
+  
+  .shipping-dropdown {
+    color: #595959;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .donut-banner {
+    width: 100%;
+  }
+  .donut-banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  
+  .donut-singles img {
+    width: 100%;
+  }
+  
+  .shipping-price-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 70.5%;
+    margin-top: 15px;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .shipping-dropdown-paragraph {
+    font-size: 14px;
+    color: #595959;
+    font-weight: 300;
+    margin-top: 5px;
+  }
+  
+  .donut-container-overall-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .donut-container-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+  }
+  
+  .donut-container-right .image-container {
+    position: relative;
+    background: white;
+  }
+  
+  .donut-container-right img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .donut-container-right button {
+    position: absolute;
+    top: 50%;
+    margin: 0 16px;
+    font-size: 24px;
+  }
+  .donut-container-right button:nth-of-type(2) {
+    position: absolute;
+    right: 0%;
+  }
+  
+  .donut-container-right img {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .donut-container-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .donut-container-right,
+  .donut-container-left {
+    margin-top: 60px;
+  }
+  
+  .donut-info-container {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    font-size: 14px;
+    justify-content: space-between;
+    font-weight: 300;
+    align-self: baseline;
+  }
+  
+  .specifications {
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .purchase {
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 1023px) {
+    .donut-container-overall-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .donut-info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    /* Hvordan få dette bilde over container left? */
+    .donut-container-right {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  

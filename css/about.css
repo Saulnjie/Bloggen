@@ -1,0 +1,133 @@
+.about-paragraph {
+    color: #595959;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.about-paragraph-part-two {
+    color: #595959;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.resume {
+    color: #595959;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.resume-chevron-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border-bottom: #595959 1px solid;
+    cursor: pointer;
+    width: 97.5%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+      }
+
+
+.resume-title {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sub-title {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.resume-paragraph {
+    color:black;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.contact-title {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.contact-paragraph {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    color: #595959;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+
+.about-container-overall {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.about-container-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.about-container-right img {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.about-container-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+@media (max-width: 1023px) {
+
+    .about-container-overall {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .about-container-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-container-left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    
+    .about-container-right img {
+        display: flex;
+        object-fit: cover;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+
+}
