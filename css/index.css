@@ -193,9 +193,30 @@
   flex-direction: column;
   justify-content: center;
   flex: 1;
+  height: 100vh;
 }
 
 .landing-content > div {
   align-self: flex-end;
   margin-top: 32px;
+}
+
+.posts-container {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.post-preview {
+  max-width: 400px;
+  background: #f5f5f5;
+}
+.post-preview .article-content {
+  padding: 24px;
+}
+.post-preview .read-more-container {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
 }
