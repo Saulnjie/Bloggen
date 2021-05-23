@@ -14,7 +14,7 @@ function insertPosts(posts) {
 
         article.className = "post-preview"
 
-        const thumbnail = `${STRAPI_URL}${post.coverPhoto.formats.small.url}`
+        const thumbnail = `${STRAPI_URL}${post.coverPhoto.formats.thumbnail.url}`
         article.innerHTML = `
         <img src="${thumbnail}" class="post-thumbnail" />
         <div class="article-content"> 
@@ -24,7 +24,6 @@ function insertPosts(posts) {
                 <a>Read more</a>
                 <i class="fas fa-arrow-right"></i>
             </div>
-        
         </div>
 
         `
