@@ -10,7 +10,7 @@
   --breakpoint-desktop: 1280px;
 
   /* COLORS */
-  --primary-color: #de0d48;
+  --primary-color: #4f6137;
   --yellow: #d4c30d;
   --purple: #722099;
   --blue: #1b0dde;
@@ -99,6 +99,13 @@ li {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.page-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 25%;
 }
 
 /* BUTTONS */

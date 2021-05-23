@@ -75,7 +75,7 @@
 
 .about-container-overall {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   justify-content: space-between;
 }
@@ -100,7 +100,7 @@
 @media (max-width: 1023px) {
   .about-container-overall {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     justify-content: space-between;
   }
