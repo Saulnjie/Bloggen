@@ -1,10 +1,22 @@
 
+const postsContainer = document.querySelector(".posts-container");
 const STRAPI_URL = "https://cms.alinjie.io"
 
-function insertPosts(posts) {
-    const postsContainer = document.querySelector(".posts-container");
+let posts;
 
-    posts.forEach(post => {
+const postsToShow = []
+
+function addNextPosts() {
+    const countOfActivePosts = postsToShow.length
+    const nextFourPosts = posts.slice(countOfActivePosts, countOfActivePosts + 4)
+    nextFourPosts.forEach(post => postsToShow.push(post))
+    insertPosts()
+}
+
+function insertPosts() {
+    postsContainer.innerHTML = ""
+
+    postsToShow.forEach(post => {
 
         const article = document.createElement("article")
         const createdAt = post.created_at
@@ -34,10 +46,20 @@ function insertPosts(posts) {
 
 async function getPosts() {
     const response = await fetch(`${STRAPI_URL}/posts`);
+    posts =  await response.json()
 
-    console.log("Running")
-    return await response.json()
+    const firstFourPosts = posts.slice(0, 4)
+
+    firstFourPosts.forEach((post) => {
+        postsToShow.push(post)
+    })
 }
 
 
 getPosts().then(insertPosts)
+
+
+
+const loadMoreButton = document.querySelector("#load-more-button");
+
+loadMoreButton.onclick = addNextPosts
