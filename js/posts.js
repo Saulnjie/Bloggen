@@ -8,7 +8,7 @@ const postsToShow = []
 
 function addNextPosts() {
     const countOfActivePosts = postsToShow.length
-    const nextFourPosts = posts.slice(countOfActivePosts, countOfActivePosts + 4)
+    const nextFourPosts = posts.slice(countOfActivePosts, countOfActivePosts + 2)
     nextFourPosts.forEach(post => postsToShow.push(post))
     insertPosts()
 }
@@ -48,7 +48,7 @@ async function getPosts() {
     const response = await fetch(`${STRAPI_URL}/posts`);
     posts =  await response.json()
 
-    const firstFourPosts = posts.slice(0, 4)
+    const firstFourPosts = posts.slice(0, 10)
 
     firstFourPosts.forEach((post) => {
         postsToShow.push(post)

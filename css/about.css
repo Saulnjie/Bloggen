@@ -65,7 +65,7 @@
 @media (max-width: 1023px) {
   .about-container-overall {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: space-between;
   }

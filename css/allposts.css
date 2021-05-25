@@ -10,12 +10,6 @@
 .read-more-container {
   font-weight: 600;
 }
-.posts-container {
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-}
 
 .posts-title {
   margin-top: 30px;
@@ -60,5 +54,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  .posts-container {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
