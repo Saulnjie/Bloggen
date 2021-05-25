@@ -70,6 +70,10 @@ input {
   width: 50%;
 }
 
+label {
+  font-weight: 600;
+}
+
 @media (max-width: 1023px) {
   .contact-container-overall {
     display: flex;
