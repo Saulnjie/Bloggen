@@ -26,7 +26,7 @@ function insertPosts() {
 
         article.className = "post-preview"
 
-        const thumbnail = `${STRAPI_URL}${post.coverPhoto.formats.thumbnail.url}`
+        const thumbnail = `${STRAPI_URL}${post.coverPhoto.formats.small.url}`
         article.innerHTML = `
         <img src="${thumbnail}" class="post-thumbnail" />
         <div class="article-content"> 

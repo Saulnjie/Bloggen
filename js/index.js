@@ -17,7 +17,7 @@ function renderPost(post) {
 
   article.innerHTML = `
     <div class="article-preview-card">
-      <img src="https://cms.alinjie.io${post.coverPhoto.formats.thumbnail.url}" />
+      <img src="https://cms.alinjie.io${post.coverPhoto.formats.small.url}" />
       <h2>${post.title}</h2>
       <p>${post.subtitle}</p>
     </div>
