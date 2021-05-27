@@ -36,6 +36,12 @@
   font-weight: 600;
 }
 
+.landing-hero-paragraph {
+  color: white;
+  font-size: 24px;
+  margin: auto;
+}
+
 .full-screen-banner {
   height: 100vh;
   background-image: url(../img/post12-1.jpg);
