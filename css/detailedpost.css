@@ -94,25 +94,6 @@
   width: 100%;
 }
 
-.shipping-price-container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  width: 70.5%;
-  margin-top: 15px;
-  cursor: pointer;
-  text-align: left;
-  outline: none;
-  transition: 0.4s;
-}
-
-.shipping-dropdown-paragraph {
-  font-size: 14px;
-  color: #595959;
-  font-weight: 300;
-  margin-top: 5px;
-}
-
 .donut-container-overall-content {
   display: flex;
   flex-direction: row;
@@ -195,18 +176,6 @@
   justify-content: space-between;
   font-weight: 300;
   align-self: baseline;
-}
-
-.specifications {
-  font-weight: 600;
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-
-.purchase {
-  font-weight: 600;
-  margin-top: 15px;
-  margin-bottom: 5px;
 }
 
 @media (max-width: 1023px) {
