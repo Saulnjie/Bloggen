@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Ett kvarter til marka" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/detailedpost.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/post.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"
+    />
+
     <script
       src="https://kit.fontawesome.com/91d0eac963.js"
       crossorigin="anonymous"
@@ -39,16 +44,10 @@
               </ul>
             </nav>
           </header>
-
-          <div class="detailed-post-intro"></div>
         </div>
-        <i class="fas fa-chevron-down"></i>
       </div>
-      <div class="container donut-container-overall-content">
-        <h1>pOST starts here</h1>
-        <footer></footer>
-      </div>
+      <div class="container post-container prose"></div>
     </main>
   </body>
-  <script src="js/detailed.js"></script>
+  <script type="module" src="/js/post.js"></script>
 </html>

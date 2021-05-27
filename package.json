@@ -1,0 +1,18 @@
+{
+  "name": "Bloggen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Saulnjie/Bloggen.git",
+  "author": "SAUL_NJIE <SAULUS92@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^2.3.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "marked": "^2.0.6"
+  }
+}

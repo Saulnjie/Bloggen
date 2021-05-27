@@ -1,39 +1,55 @@
-const carouselPostsContainer = document.querySelector(".carousel-posts-container");
-
+import {  CMS_URL,  getPosts } from "./posts"
+let carouselPosts = []
 let allPosts = []
-let shownPosts = []
 
-document.querySelector("#previous-four").onclick = () => {
-  console.log("Prev")
-};
-
-document.querySelector("#next-four").onclick = () => {
-  
-};
+const carouselPostsContainer = document.querySelector(".carousel-posts-container")
+const nextButton = document.querySelector("#next-posts")
+const previousButton = document.querySelector("#previous-posts")
 
 
-function renderPost(post) {
-  const article = document.createElement("article");
+function renderCarouselPosts() {
 
-  article.innerHTML = `
-    <div class="article-preview-card">
-      <img src="https://cms.alinjie.io${post.coverPhoto.formats.small.url}" />
-      <h2>${post.title}</h2>
-      <p>${post.subtitle}</p>
-    </div>
-  `
+    if (carouselPosts.length > 0) {
+        carouselPostsContainer.innerHTML = ""
+    }
 
-  carouselPostsContainer.appendChild(article)
+    carouselPosts.forEach(post => {
+        const postCard = document.createElement("div");
+
+        postCard.innerHTML = `
+            <img src="${CMS_URL}${post.coverPhoto.formats.small.url}" />
+            <span>${post.title}</span>
+        `
+        carouselPostsContainer.appendChild(postCard)
+    })
 }
 
+function getNextFourPosts() {
+    const lastPost = carouselPosts.slice(-1)[0]
+    const lastPostIndex = allPosts.indexOf(allPosts.find(post => post.id === lastPost.id))
+    const nextPosts = allPosts.slice(lastPostIndex + 1, lastPostIndex + 5)
 
-fetch("https://cms.alinjie.io/posts")
-    .then(res => res.json())
+    carouselPosts = nextPosts
+    renderCarouselPosts()
+}
+
+function getPreviousPosts() {
+    const firstPost = carouselPosts[0]
+
+    const firstPostIndex = allPosts.indexOf(allPosts.find(post => post.id === firstPost.id))
+    const nextPosts = allPosts.slice(firstPostIndex - 4, firstPostIndex)
+
+    carouselPosts = nextPosts
+    renderCarouselPosts()
+}
+
+getPosts()
     .then(posts => {
-      allPosts = posts
-      shownPosts = allPosts.slice(0, 4)
-
-      shownPosts.forEach(renderPost)
+        const firstFourPosts = posts.slice(0, 4);
+        carouselPosts = firstFourPosts;
+        allPosts = posts
+        renderCarouselPosts()
     })
 
-  
+nextButton.onclick = getNextFourPosts
+previousButton.onclick = getPreviousPosts

@@ -13,14 +13,21 @@
 
 .full-screen-banner {
   height: 100vh;
-  background-image: url(../img/yayayaya.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px;
+}
+.full-screen-banner h1 {
+  font-size: 64px;
+}
+.full-screen-banner span {
+  font-size: 32px;
 }
 .donut-sub-title {
   color: white;
