@@ -36,6 +36,16 @@
   font-weight: 600;
 }
 
+.landing-paragraph-container {
+  margin: auto;
+}
+
+.landing-title-paragraph {
+  color: white;
+  font-size: 36px;
+  margin: auto;
+}
+
 .landing-hero-paragraph {
   color: white;
   font-size: 24px;
