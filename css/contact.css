@@ -72,6 +72,7 @@ input {
 
 label {
   font-weight: 600;
+  margin-top: 16px;
 }
 
 @media (max-width: 1023px) {
