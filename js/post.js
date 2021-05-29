@@ -14,7 +14,7 @@ getPost(postId)
         postContainer.appendChild(article)
 
         const titleContainer = document.createElement("div");
-
+        
         titleContainer.innerHTML = `
             <h1>${post.title}</h1>
             <span>${post.subtitle}</span>

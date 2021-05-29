@@ -19,9 +19,9 @@ function renderPosts() {
 
         postCard.innerHTML = `
             <img src="${CMS_URL}${post.coverPhoto.formats.small.url}" />
-            <span>${post.title}</span>
-            <span>${post.subtitle}</span>
             <span>${post.created_at}</span>
+            <span class="post-title">${post.title}</span>
+            <span>${post.subtitle}</span>
         `
 
         postCard.appendChild(link)
