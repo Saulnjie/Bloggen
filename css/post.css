@@ -24,15 +24,12 @@
   padding: 40px;
   opacity: 100%;
 }
-.full-screen-banner h1 {
-  font-size: 24px;
+.full-screen-banner h2 {
+  font-size: 70px;
+  font-weight: 600;
 }
 .full-screen-banner span {
-  font-size: 20px;
-}
-.donut-sub-title {
-  color: white;
-  font-size: 18px;
+  font-size: 34px;
   font-weight: 300;
 }
 

@@ -14,10 +14,11 @@ getPost(postId)
         postContainer.appendChild(article)
 
         const titleContainer = document.createElement("div");
-        
+
         titleContainer.innerHTML = `
-            <h1>${post.title}</h1>
-            <span>${post.subtitle}</span>
+        <div class="container post-title-and-paragraph">
+            <h2>${post.title}</h2>
+            <span>${post.subtitle}</span></div>
         `
 
         banner.appendChild(titleContainer)
