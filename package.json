@@ -6,11 +6,11 @@
   "author": "SAUL_NJIE <SAULUS92@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "vite": "^2.3.4"
+    "snowpack": "^3.5.2"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "snowpack dev",
+    "build": "snowpack build"
   },
   "dependencies": {
     "dayjs": "^1.10.5",
