@@ -1,5 +1,5 @@
 import { getPosts, CMS_URL } from "./posts"
-import * as dayjs from 'dayjs'
+import dayjs from 'dayjs'
 
 let postsToShow = []
 let allPosts = []
