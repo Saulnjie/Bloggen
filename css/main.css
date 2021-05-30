@@ -133,6 +133,10 @@ li {
   height: 50px;
 }
 
+a {
+  cursor: pointer;
+}
+
 footer {
   margin-top: auto;
   /* background-image: url(../img/footer-black.svg); */

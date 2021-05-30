@@ -75,7 +75,7 @@
               <i class="fab fa-instagram"></i> @saulsays
             </p>
           </div>
-          <div class="contact-container-right">
+          <form class="contact-container-right">
             <h2 class="contact-subtitle">
               For any questions or inquiries, please do not hesitate to contact
               me through social media or by email.
@@ -86,6 +86,8 @@
               placeholder="Enter your name here"
               id="name"
               name="name"
+              required
+              pattern="[A-z]{5,}"
             />
             <label for="email">Email</label>
             <input
@@ -93,6 +95,7 @@
               placeholder="Enter your Email here"
               id="email"
               name="email"
+              required
             />
             <label for="text">Subject</label>
             <input
@@ -100,16 +103,20 @@
               placeholder="Enter your Subject here"
               id="text"
               name="text"
+              required
+              pattern="[A-z]{15,}"
             />
             <label for="text">Message</label>
-            <input
+            <textarea
               type="text"
               placeholder="Enter your Message here"
               id="text"
               name="text"
-            />
-            <button class="button">Submit</button>
-          </div>
+              required
+              pattern="[A-z]{25,}"
+            ></textarea>
+            <button type="submit" class="button">Submit</button>
+          </form>
         </div>
         <footer></footer>
       </div>

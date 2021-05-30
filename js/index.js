@@ -26,8 +26,11 @@ function renderCarouselPosts() {
 
 function getNextFourPosts() {
     const lastPost = carouselPosts.slice(-1)[0]
-    const lastPostIndex = allPosts.indexOf(allPosts.find(post => post.id === lastPost.id))
+    const lastPostIndex = allPosts.findIndex(post => post.id === lastPost.id)
+
     const nextPosts = allPosts.slice(lastPostIndex + 1, lastPostIndex + 5)
+
+    if (nextPosts.length === 0) return;
 
     carouselPosts = nextPosts
     renderCarouselPosts()
@@ -35,9 +38,10 @@ function getNextFourPosts() {
 
 function getPreviousPosts() {
     const firstPost = carouselPosts[0]
-
-    const firstPostIndex = allPosts.indexOf(allPosts.find(post => post.id === firstPost.id))
+    
+    const firstPostIndex = allPosts.findIndex(post => post.id === firstPost.id)
     const nextPosts = allPosts.slice(firstPostIndex - 4, firstPostIndex)
+    if (nextPosts.length === 0) return;
 
     carouselPosts = nextPosts
     renderCarouselPosts()

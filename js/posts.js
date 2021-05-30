@@ -1,4 +1,4 @@
-export const CMS_URL = "https://cms.alinjie.io"
+export const CMS_URL = "https://cms.saulnjie.tech"
 
 export async function getPosts() {
     const response = await fetch(`${CMS_URL}/posts`)

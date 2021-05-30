@@ -1,4 +1,5 @@
 import { getPosts, CMS_URL } from "./posts"
+import * as dayjs from 'dayjs'
 
 let postsToShow = []
 let allPosts = []
@@ -11,6 +12,9 @@ function renderPosts() {
     postsToShow.forEach((post) => {
         const postCard = document.createElement("div")
         const link = document.createElement("a");
+        const date = dayjs(post.created_at).format('DD.MM.YYYY')
+        const postContentContainer = document.createElement("div")
+        postContentContainer.classList.add("post-content-container")
 
         link.innerText = "Read more"
         link.onclick = () => {
@@ -19,13 +23,17 @@ function renderPosts() {
 
         postCard.innerHTML = `
             <img src="${CMS_URL}${post.coverPhoto.formats.small.url}" />
-            <span>${post.created_at}</span>
-            <span class="post-title">${post.title}</span>
-            <span>${post.subtitle}</span>
+
         `
+        postContentContainer.innerHTML = `
+            <span class"post-date">${date}</span>
+            <span class="post-title">${post.title}</span>
+            <span class="post-subtitle">${post.subtitle}</span>
 
-        postCard.appendChild(link)
-
+            `
+    
+        postContentContainer.appendChild(link)
+        postCard.appendChild(postContentContainer)
         postsContainer.appendChild(postCard)
     })
 }
